@@ -110,16 +110,18 @@ input[type="submit"]:hover {
 .pseudo-list li:nth-child(4) {
   background-color: rgb(75, 30, 30);
 }
-}
 
 .filter-image {
-        filter: grayscale(100%);
-        transition: filter 0.3s ease;
-      }
-      
-      .filter-image:hover {
-        filter: grayscale(0%);
-      }
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.filter-image:hover {
+  filter: grayscale(0%);
+}
 
 .quote {
   position: relative;
@@ -134,3 +136,4 @@ input[type="submit"]:hover {
   left: 0;
   top: 0;
   color: lightgray;
+}
