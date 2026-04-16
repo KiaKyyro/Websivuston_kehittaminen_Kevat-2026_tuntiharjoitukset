@@ -32,8 +32,16 @@ body {
 
 .grid-item {
   background-color: lightgreen;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
+  width: 95%;
+}
+
+.grid-item img {
+  width: 90%;
+  height: 200px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
 }
   
 .flex-container {
