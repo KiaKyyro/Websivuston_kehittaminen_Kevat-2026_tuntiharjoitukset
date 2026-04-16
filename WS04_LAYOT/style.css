@@ -2,6 +2,7 @@ h1 {
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: black;
   padding: 10px;
+  text-align: center;
 }
 
 h2 {
@@ -102,4 +103,110 @@ body {
 
 .menu a:hover {
   color: blue;
+=======
+h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: black;
+  padding: 10px;
+}
+
+h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(181, 112, 156);
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+body {
+  margin: 0;
+  background-color: #4e4c4c;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+.container {
+  max-width: 900px; 
+  margin: 0 auto; 
+  padding: 20px;
+  background-color: white;
+}
+
+.grid-item {
+  background-color: lightgreen;
+  padding: 20px;
+  text-align: center;
+}
+  
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.box {
+  background-color: lightblue;
+  padding: 20px;
+  text-align: center;
+}
+.responsive-box {
+  padding: 20px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .responsive-box {
+    background-color: lightcoral;
+  }
+}
+
+@media (min-width: 601px) {
+  .responsive-box {
+    background-color: lightseagreen;
+  }
+}
+.image-row {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.image-row img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+
+  border-radius: 15px;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    filter: grayscale(100%);
+
+}
+  .image-row img {
+  filter: grayscale(100%) brightness(0.8);
+}
+
+.image-row img:hover {
+  filter: grayscale(0%) brightness(1);
+}
+.menu ul {
+  display: flex;
+  justify-content: center; 
+  gap: 60px; 
+  list-style: none;
+  padding: 0;
+  margin-top: 15px; 
+}
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: blue;
+  
 }
