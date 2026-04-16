@@ -75,16 +75,17 @@ body {
 
   border-radius: 15px;
   transition: 0.3s;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    filter: grayscale(100%);
-
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2); 
 }
-  .image-row img {
-  filter: grayscale(100%) brightness(0.8);
+.filter-image { /* en saanut toimimaan ilman näitä, voi olla että turhia */
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 10px;
 }
-
-.image-row img:hover {
-  filter: grayscale(0%) brightness(1);
+.filter-image:hover {
+  filter: grayscale(0%);
 }
 .menu ul {
   display: flex;
