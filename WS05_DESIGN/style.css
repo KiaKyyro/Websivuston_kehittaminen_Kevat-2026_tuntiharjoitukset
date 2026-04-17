@@ -35,7 +35,8 @@ header {
 }
 
 .responsive-image {
-  width: 300px;
+  width: 100px;
+  max-width: 700px;
   height: auto;
   display: block;
   margin: 0 auto 20px auto;
@@ -88,12 +89,14 @@ header {
     }
     
     .column {
-    flex: 2;
-    margin: 5px;
-    padding: 10px;
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
     background-color: #666;
     color: rgb(0, 0, 0);
     text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
     
     @media (max-width: 600px) {
