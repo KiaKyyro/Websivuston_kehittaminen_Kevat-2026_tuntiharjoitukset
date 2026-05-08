@@ -1,0 +1,24 @@
+body {
+  background-color: #f8f9fa;
+}
+
+/* Grid boxes */
+.grid-box {
+  padding: 30px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Buttons spacing */
+.btn {
+  margin-right: 10px;
+}
+
+/* Card styling */
+.custom-card {
+  width: 18rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
